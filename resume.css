@@ -1,0 +1,82 @@
+.card-view{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card1{
+	width: 30%;
+	text-align: center;
+	border: 1px solid #000;
+	word-wrap: break-word;
+	border-radius: 10%;
+	background: rgb(158, 188, 245);
+    box-shadow: 6px 6px 6px -6px;
+    margin: 1% auto;
+
+}
+.card2{
+	width: 68%;
+	border: 1px solid #000;
+	padding-left: 10px;
+	border-radius: 2%;
+	background: rgb(158, 188, 245);
+    box-shadow: 6px 6px 6px -6px;
+    margin: 1% auto;
+
+}
+
+img{
+	width: 100px;
+	border-radius: 50%;
+}
+
+table{
+			border-collapse: collapse;
+			width: 60%;
+			padding: 15px;
+			margin: 0 auto;
+			border: 1px solid #000;
+		}
+		.rsponsive>table{
+			width: 100%;
+		}
+		.rsponsive>th,
+		.rsponsive>td{
+			display: table-cell;
+			padding:10px;
+		}
+		.responsive>td::before{
+			display: none;
+		}
+		@media (min-device-width: 320px) and (max-device-width: 480px){
+			.card1,
+			.card2{
+				width: 100%;
+			}
+			.table{
+				width: 100%;
+
+			}
+			.rsponsive{
+				width: 80%;
+			}
+			.rsponsive>th{
+				display: none;
+			}
+				.rsponsive>td{
+				display: block;
+			}
+			.rsponsive>td:first-child,
+			.rsponsive>td:last-child{
+				padding-top: .5em;
+			}
+
+			.rsponsive>td::before{
+				content: attr(data-th) ": ";
+				font-weight: bold;
+				width: 5em;
+				display: inline-block;
+			}
+
+		}
